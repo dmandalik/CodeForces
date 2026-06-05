@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void weirdAlgo(int n){
+void weirdAlgo(long long n){
     while(n != 1){
         cout << n << " ";
         if(n % 2 == 0){
@@ -17,9 +17,11 @@ void weirdAlgo(int n){
             n = n * 3 + 1;
         }
     }
-    cout << n << " ";
+    cout << n << " " << "\n";
 }
 
 int main(){
-    weirdAlgo(3);
+    long long n = 0;
+    cin >> n;
+    weirdAlgo(n);
 }
