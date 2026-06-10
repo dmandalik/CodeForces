@@ -2,12 +2,10 @@
 
 #include <stdio.h>
 #include <iostream>
-#include <bits/stdc++.h>
 
 using namespace std;
 
 int main() {
-
     long long n;
     cin >> n;
 
@@ -15,6 +13,7 @@ int main() {
     for (long long power = 5; power <= n; power *= 5) {
         count += n / power;
     }
+
     cout << count << "\n";
 
 }
