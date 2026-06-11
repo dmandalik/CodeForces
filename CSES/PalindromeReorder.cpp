@@ -2,6 +2,8 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -35,7 +37,7 @@ int main() {
         firstHalf += string(count[i] / 2, char('A' + i));
     }
     if (oddIndex != -1) {
-        middle = string(count[oddIndex], char('A' + oddIndex));
+        middle = string(1, char('A' + oddIndex));
     }
     string secondHalf = firstHalf;
     reverse(secondHalf.begin(), secondHalf.end());
